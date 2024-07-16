@@ -4,7 +4,7 @@ const Blog = require('./Blog');
 
 
 Login.hasMany(Blog, {
-    foreginKey: 'login_id',
+    foreignKey: 'login_id',
     onDelete: 'CASCADE'
 });
 
