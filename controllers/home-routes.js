@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
       res.json(err);
     });
     const blogs = blogData.map((blog) => blog.get({ plain : true }));
-    res.render('all', { blogs })
+    res.render('all', { blogs: [blogs] })
 })
 
 router.get('/blog/:id', async (req, res) =>{
